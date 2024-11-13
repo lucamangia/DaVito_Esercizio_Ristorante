@@ -17,7 +17,6 @@
  -Arancin*
  -Guacamole
  -Farinata
-=======
  
 # PRIMI PIATTI
 1. Risotto al Tartufo Nero con Fonduta di Parmigiano Reggiano
@@ -35,13 +34,22 @@ Ingredienti principali: Pasta per lasagna, carne macinata di manzo, carne di mai
 5. Spaghetti con Vongole Veraci, Bottarga e Pomodorini Confit
 Descrizione: Un piatto di spaghetti al dente condito con vongole veraci freschissime, arricchito dal sapore salato e intenso della bottarga e dalla dolcezza dei pomodorini confit. Un piatto di mare fresco e raffinato, ideale per un ristorante che punta sulla qualità degli ingredienti.
 Ingredienti principali: Spaghetti, vongole veraci, bottarga di muggine, pomodorini, aglio, olio extravergine di oliva, prezzemolo.
-=======
+
+#SECONDI PIATTI
+-bistecca di manzo
+-distecca di vitello
+-arrosticini di pecora
+-arrosticini di fegato
+-arrosto con patate
+-salcicce
+
 #Bevande
 -Cola
 -Coca
 -Birra
 -Acqua
 -Vino
+
 
 
 
