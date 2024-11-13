@@ -8,3 +8,10 @@
 # //Emanuel dessert
 # //Luca bevande
 
+# ANTIPASTI
+ -Polpette di melanzane
+ -Vitello tonnato
+ -Quiche di zucchine
+ -Flan di spinaci
+ -Arancin*
+ -Guacamole
