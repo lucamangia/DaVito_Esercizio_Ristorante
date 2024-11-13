@@ -15,3 +15,4 @@
  -Flan di spinaci
  -Arancin*
  -Guacamole
+ -Farinata
