@@ -8,3 +8,10 @@
 # //Emanuel dessert
 # //Luca bevande
 
+SECONDI PIATTI
+-bistecca di manzo
+-distecca di vitello
+-arrosticini di pecora
+-arrosticini di fegato
+-arrosto con patate
+-salcicce
