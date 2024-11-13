@@ -8,3 +8,10 @@
 # //Emanuel dessert
 # //Luca bevande
 
+#Bevande
+-Cola
+-Coca
+-Birra
+-Acqua
+-Vino
+
