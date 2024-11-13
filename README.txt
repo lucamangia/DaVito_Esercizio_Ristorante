@@ -8,7 +8,17 @@
 # //Emanuel dessert
 # //Luca bevande
 
- feature/primiPiatti
+
+# ANTIPASTI
+ -Polpette di melanzane
+ -Vitello tonnato
+ -Quiche di zucchine
+ -Flan di spinaci
+ -Arancin*
+ -Guacamole
+ -Farinata
+=======
+ 
 # PRIMI PIATTI
 1. Risotto al Tartufo Nero con Fonduta di Parmigiano Reggiano
 Descrizione: Un risotto cremoso preparato con brodo vegetale, arricchito dal profumo inconfondibile del tartufo nero e completato con una fonduta di Parmigiano Reggiano. Il contrasto tra la ricchezza del formaggio e l'aroma terroso del tartufo crea un piatto sofisticato e avvolgente.
@@ -32,5 +42,6 @@ Ingredienti principali: Spaghetti, vongole veraci, bottarga di muggine, pomodori
 -Birra
 -Acqua
 -Vino
+
 
 
