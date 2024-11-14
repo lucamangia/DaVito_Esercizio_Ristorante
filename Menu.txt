@@ -43,6 +43,12 @@ Ingredienti principali: Spaghetti, vongole veraci, bottarga di muggine, pomodori
 -arrosto con patate
 -salcicce
 
+# DESSERT
+-Tiramisù
+-Cannoli Siciliani
+-Profiteroles
+-Cheesecake
+
 #Bevande
 -Cola
 -Coca
