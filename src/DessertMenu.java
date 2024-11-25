@@ -1,3 +1,4 @@
+//Questa classe contiene la lista delle portate del menù dei dessert
 public final class DessertMenu {
 
     private static final Dessert[] dessertMenu = new Dessert[] {

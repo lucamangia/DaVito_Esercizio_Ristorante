@@ -1,5 +1,3 @@
-import java.util.Locale;
-
 public class Dessert {
 
     private String nome, descrizione;
@@ -47,6 +45,7 @@ public class Dessert {
         this.ingredienti = ingredienti;
     }
 
+    //Funzione che restituisce una stringa contenente l'elenco degli ingredienti dell'istanza
     private String elencoIngredienti() {
         String list = "";
         for (int i = 0; i < ingredienti.length - 1; i++) {
