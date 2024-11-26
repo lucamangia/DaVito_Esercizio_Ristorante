@@ -1,17 +1,82 @@
-//Classe contenente il Main del progetto, dove gestire la stampa del menù
+//Classe che contiene le istanze delle portate del menù
 public class Menu {
-    public static void main(String[] args) {
 
-        //Header del menù
-        System.out.println("\n-------------- MENÙ --------------\n");
+    //Aggiungere qui i menù delle altre portate
 
-        //Stampa del menù dei dessert
-        System.out.println("\nDESSERT -----\n");
-        Dessert[] dessertMenu = DessertMenu.getDessertMenu();
-        for (Dessert dessert : dessertMenu) {
-            System.out.println(dessert);
-            System.out.println("\n-------------\n");
+    //Menù dei dessert
+    private final Dessert[] dessertMenu = new Dessert[] {
+
+            new Dessert("Tiramisù",
+                    """
+                            Un classico dessert italiano, cremoso e ricco di sapori.
+                            Composto da strati di savoiardi imbevuti nel caffè e ricoperti con
+                            una soffice crema al mascarpone, il tutto spolverato con cacao amaro.
+                            È perfetto per concludere un pasto con un dolce delizioso ma non troppo pesante.""",
+                    6.50,
+                    new String[] {
+                            "Savoiardi",
+                            "Mascarpone",
+                            "Uova",
+                            "Zucchero",
+                            "Caffé espresso",
+                            "Cacao amaro",
+                            "Liquore Marsala"
+                    }),
+
+            new Dessert("Soufflé al cioccolato",
+                    """
+                            Un dessert caldo e voluttuoso, il soufflé al cioccolato
+                            è una delle preparazioni più amate dai golosi.
+                            Il suo cuore morbido e fondente si scioglie in bocca,
+                            regalando un’esperienza intensa e soddisfacente.
+                            Viene servito appena uscito dal forno, per mantenere
+                            la sua consistenza soffice.""",
+                    8,
+                    new String[] {
+                            "Cioccolato fondente",
+                            "Burro",
+                            "Uova",
+                            "Zucchero",
+                            "Farina",
+                            "Panna",
+                            "Vaniglia"
+                    }),
+
+            new Dessert("Crème Brulée",
+                    """
+                            Un dolce francese sofisticato e irresistibile, con
+                            una crema vellutata alla vaniglia e una crosta di
+                            zucchero caramellato croccante. La crema viene cotta
+                            delicatamente in forno e poi caramellata sulla superficie
+                            con un cannello, per ottenere il contrasto tra il dolce e
+                            la croccantezza del caramello.""",
+                    7.5,
+                    new String[] {
+                            "Panna fresca",
+                            "Uova",
+                            "Zucchero",
+                            "Vaniglia"
+                    })
+    };
+
+    //Aggiungere qui le funzioni per le altre portate (opzionale)
+
+    //Funzione ausiliaria che restituisce il menù dei dessert
+    private String getDessertMenu() {
+        String dessertMenu = "\nDESSERT -----\n\n";
+        for (Dessert dessert : this.dessertMenu) {
+            dessertMenu += dessert + "\n\n-------------\n\n";
         }
+        return dessertMenu;
+    }
+
+    @Override
+    public String toString() {
+        return "\n-------------- MENÙ --------------\n\n" +
+                getDessertMenu();
+
+        //Aggiungere nel return le stringhe con i menù delle altre portate
+        //(ad esempio getAntipastiMenu())
 
     }
 }
