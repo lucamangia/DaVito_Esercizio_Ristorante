@@ -16,7 +16,7 @@ public class Primi {
         this.tipoDiCottura = tipoDiCottura;
     }
 
-
+        // Setter and Getter
     public String getNomePiatto() {return nomePiatto;}
 
     public void setNomePiatto(String nomePiatto) {this.nomePiatto = nomePiatto;}
@@ -46,6 +46,7 @@ public class Primi {
         return output;
     }
 
+    //Sovrascrizione di toString
     @Override
     public String toString(){
         return "Nome del piatto "+ nomePiatto
