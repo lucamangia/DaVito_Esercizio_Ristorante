@@ -1,71 +1,45 @@
 //Classe che contiene le istanze delle portate del menù
 public class Menu {
 
-    //Aggiungere qui i menù delle altre portate
+    //Massimo 10 piatti per portata (Non conosciamo ancora gli array dinamici)
 
-    //Menù dei dessert
-    private final Dessert[] dessertMenu = new Dessert[] {
+    private Dessert[] bevandeMenu = new Dessert[10];
+    private int numberOfBevande;
 
-            new Dessert("Tiramisù",
-                    """
-                            Un classico dessert italiano, cremoso e ricco di sapori.
-                            Composto da strati di savoiardi imbevuti nel caffè e ricoperti con
-                            una soffice crema al mascarpone, il tutto spolverato con cacao amaro.
-                            È perfetto per concludere un pasto con un dolce delizioso ma non troppo pesante.""",
-                    6.50,
-                    new String[] {
-                            "Savoiardi",
-                            "Mascarpone",
-                            "Uova",
-                            "Zucchero",
-                            "Caffé espresso",
-                            "Cacao amaro",
-                            "Liquore Marsala"
-                    }),
+    private Dessert[] antipastiMenu = new Dessert[10];
+    private int numberOfAntipasti;
 
-            new Dessert("Soufflé al cioccolato",
-                    """
-                            Un dessert caldo e voluttuoso, il soufflé al cioccolato
-                            è una delle preparazioni più amate dai golosi.
-                            Il suo cuore morbido e fondente si scioglie in bocca,
-                            regalando un’esperienza intensa e soddisfacente.
-                            Viene servito appena uscito dal forno, per mantenere
-                            la sua consistenza soffice.""",
-                    8,
-                    new String[] {
-                            "Cioccolato fondente",
-                            "Burro",
-                            "Uova",
-                            "Zucchero",
-                            "Farina",
-                            "Panna",
-                            "Vaniglia"
-                    }),
+    private Dessert[] primiMenu = new Dessert[10];
+    private int numberOfPrimi;
 
-            new Dessert("Crème Brulée",
-                    """
-                            Un dolce francese sofisticato e irresistibile, con
-                            una crema vellutata alla vaniglia e una crosta di
-                            zucchero caramellato croccante. La crema viene cotta
-                            delicatamente in forno e poi caramellata sulla superficie
-                            con un cannello, per ottenere il contrasto tra il dolce e
-                            la croccantezza del caramello.""",
-                    7.5,
-                    new String[] {
-                            "Panna fresca",
-                            "Uova",
-                            "Zucchero",
-                            "Vaniglia"
-                    })
-    };
+    private Dessert[] secondiMenu = new Dessert[10];
+    private int numberOfSecondi;
+
+    private Dessert[] dessertMenu = new Dessert[10];
+    private int numberOfDessert;
+
+    //Funzione che aggiunge portate al menù dei dessert
+    public void addDessert(Dessert dessert) {
+        if (numberOfDessert < 10) {
+            dessertMenu[numberOfDessert] = dessert;
+            numberOfDessert++;
+        } else {
+            System.out.println("Errore: numero massimo di dessert raggiunto!");
+        }
+    }
 
     //Aggiungere qui le funzioni per le altre portate (opzionale)
 
     //Funzione ausiliaria che restituisce il menù dei dessert
     private String getDessertMenu() {
+
+        if (numberOfDessert == 0) {
+            return "";
+        }
+
         String dessertMenu = "\nDESSERT -----\n\n";
-        for (Dessert dessert : this.dessertMenu) {
-            dessertMenu += dessert + "\n\n-------------\n\n";
+        for (int i = 0; i < numberOfDessert; i++) {
+            dessertMenu += this.dessertMenu[i] + "\n\n-------------\n\n";
         }
         return dessertMenu;
     }
